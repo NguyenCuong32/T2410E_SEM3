@@ -1,0 +1,6 @@
+Bước 1: Cài đặt Python từ trang :https://www.python.org/downloads/
+Bước 2: py -m venv venv
+        venv\Scripts\activate.bat
+        Sử dụng lệnh CD để chạy chương trình bằng lênh
+        python3 app.py
+
