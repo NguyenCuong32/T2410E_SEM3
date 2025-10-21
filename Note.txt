@@ -4,3 +4,19 @@ Bước 2: py -m venv venv
         Sử dụng lệnh CD để chạy chương trình bằng lênh
         python3 app.py
 
+
+
+Thư viện:
+Flash
+
+bước 1: Cài biến môi trường
+
+py -m venv venv
+venv\Scripts\activate.bat
+
+Bước 2: Cài thư viện
+pip3 flask, pymongo
+
+Bước 3: Viết chương trình
+app.py
+data_util.py
