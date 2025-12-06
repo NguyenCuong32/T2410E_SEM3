@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.NET/TodoList_API/bin/*
+/.NET/TodoList_API/obj/*
+/.NET/TodoList_API/.vs

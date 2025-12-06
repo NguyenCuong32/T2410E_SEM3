@@ -1,0 +1,4 @@
+﻿B1: Tạo model
+B2: Tạo DBContext
+B3: Tạo Controller
+B4: Cấu hình kết nối.
