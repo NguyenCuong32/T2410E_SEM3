@@ -5,3 +5,4 @@
 /.NET/TodoList_API/bin/*
 /.NET/TodoList_API/obj/*
 /.NET/TodoList_API/.vs
+*.dll
