@@ -10,9 +10,9 @@ namespace eVehicle.Controllers
     [ApiController]
     public class BrandController : ControllerBase
     {
-        private readonly BrandService brandService;
+        private readonly IBrandService brandService;
 
-        public BrandController(BrandService brandService)
+        public BrandController(IBrandService brandService)
         {
             this.brandService = brandService;
         }

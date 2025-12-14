@@ -21,9 +21,9 @@ namespace eVehicle.Repositories
             modelBuilder.Entity<Vehicle>();
             modelBuilder.Entity<VehicleType>();
         }
-        public DbSet<Brand> Brands { get; set; }
-        public DbSet<Color> Colors { get; set; }
-        public DbSet<Vehicle> Vehicles { get; set; }
-        public DbSet<VehicleType> VehicleTypes { get; set; }
+        public DbSet<Brand> Brand { get; set; }
+        public DbSet<Color> Color { get; set; }
+        public DbSet<Vehicle> Vehicle { get; set; }
+        public DbSet<VehicleType> VehicleType { get; set; }
     }
 }

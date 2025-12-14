@@ -1,13 +1,14 @@
 ﻿using eVehicle.Models;
 using eVehicle.Repositories;
+using eVehicle.Repositories.Interfaces;
 
 namespace eVehicle.Services
 {
     public class BrandService : IBrandService
     {
-        private readonly BrandRepository brandRepository;
+        private readonly IBrandRepository brandRepository;
 
-        public BrandService(BrandRepository brandRepository)
+        public BrandService(IBrandRepository brandRepository)
         {
             this.brandRepository = brandRepository;
         }

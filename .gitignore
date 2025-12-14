@@ -5,4 +5,7 @@
 /.NET/TodoList_API/bin/*
 /.NET/TodoList_API/obj/*
 /.NET/TodoList_API/.vs
-*.dll
+/.NET/eVehicle/bin/*
+/.NET/eVehicle/obj/*
+/.NET/eVehicle/.vs
+/ENJS/demo_expressjs/node_modules

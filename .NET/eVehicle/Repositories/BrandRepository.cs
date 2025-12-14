@@ -20,12 +20,12 @@ namespace eVehicle.Repositories
 
         public void Delete(Brand brand)
         {
-           this.eVehicleDBContext.Brands.Remove(brand);
+           this.eVehicleDBContext.Brand.Remove(brand);
         }
 
         public List<Brand> GetAll()
         {
-          return this.eVehicleDBContext.Brands.ToList();
+          return this.eVehicleDBContext.Brand.ToList();
         }
 
         public void Update(Brand brand, int brandId)
