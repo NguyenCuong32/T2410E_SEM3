@@ -9,3 +9,6 @@
 /.NET/eVehicle/obj/*
 /.NET/eVehicle/.vs
 /ENJS/demo_expressjs/node_modules
+/.NET/eVehicle_Web/bin/*
+/.NET/eVehicle_Web/obj/*
+/.NET/eVehicle_Web/.vs/*
