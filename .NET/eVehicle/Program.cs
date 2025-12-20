@@ -23,7 +23,9 @@ namespace eVehicle
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IBrandService, BrandService>();
             builder.Services.AddScoped<IBrandRepository, BrandRepository>();
-           
+            builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
+            builder.Services.AddScoped<IVehicleService, VehicleService>();
+
 
             var app = builder.Build();
 

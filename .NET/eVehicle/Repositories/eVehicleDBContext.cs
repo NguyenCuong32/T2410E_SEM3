@@ -20,10 +20,12 @@ namespace eVehicle.Repositories
             modelBuilder.Entity<Color>();
             modelBuilder.Entity<Vehicle>();
             modelBuilder.Entity<VehicleType>();
+            modelBuilder.Entity<VehicleInformation>().HasNoKey();
         }
         public DbSet<Brand> Brand { get; set; }
         public DbSet<Color> Color { get; set; }
         public DbSet<Vehicle> Vehicle { get; set; }
         public DbSet<VehicleType> VehicleType { get; set; }
+        public DbSet<VehicleInformation> VehicleInformation { get; set; }
     }
 }
