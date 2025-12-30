@@ -1,3 +1,7 @@
+using eVehicle_Web.Repository;
+using eVehicle_Web.Services;
+using Microsoft.EntityFrameworkCore;
+
 namespace eVehicle_Web
 {
     public class Program
@@ -6,9 +10,13 @@ namespace eVehicle_Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            string connectionString = configuration.GetConnectionString("eVehicleConnect");
+            builder.Services.AddDbContext<eVehicleDbContext>(options => options.UseSqlServer(connectionString));
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddScoped<IVehicleService, VehicleSevice>();
+            builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
